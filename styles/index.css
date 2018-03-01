@@ -1,32 +1,49 @@
-h1{
-	text-align: center;
-	color: purple;
-}
-
-.result{
-	display: none;
-}
-
-body{
-	font-size: 40px;
-}
-
-a{
-	text-decoration: none;
-}
-
 #timerintro{
 	position: fixed;
+	/* fixed so always visible */
 	top: 0px;
 	right: 20px;
+	background-color: white;
 }
 
 #timer{
 	position: fixed;
-	top: 10px;
+	top: 30px;
 	right: 20px;
+	background-color: white;
 }
 
+body{
+	background-color: yellow;
+	color: navy;
+	font: times;
+	font-size: 30px;
+}
+
+h1{
+	font: times;
+	color: navy;
+	background-color: blue;
+	padding: 15px;
+	margin-top: 0px;
+}
+
+h3{
+	color: orange;
+}
+
+a{
+	text-decoration: none;
+	color: navy;
+	/* get rid of automatic formatting of links */
+}
+
+/* hide results */
+.result{
+	display: none;
+}
+
+/* change appearance of whatever answer is clicked */
 .clicked{
-	color: blue;
+	color: orange;
 }
