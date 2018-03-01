@@ -20,39 +20,45 @@
 <!-- the same types of answer choices have the same class, while the questions have different id's (allows for the links to work) -->
 
 <h3 id="question1"> How messy is your room? </h3>
-<p class="HTMLanswer"> <a href ="#question2"> Not messy at all. Everything has its place. </a> </p>
-<p class="CSSanswer"> <a href ="#question2"> Not only is it not messy, it's also completely color coordinated. </a> </p>
-<p class="JSanswer"> <a href ="#question2"> I'm always in a rush, so yeah...pretty messy. </a> </p>
+<ul>
+<li class="HTMLanswer" id="1a"> <a href ="#question2"> Not messy at all. Everything has its place. </a> </li>
+<li class="CSSanswer" id="1b"> <a href ="#question2"> Not only is it not messy, it's also completely color coordinated. </a> </li>
+<li class="JSanswer" id="1c"> <a href ="#question2"> I'm always in a rush, so yeah...pretty messy. </a> </li>
+</ul>
 
 <h3 id="question2"> What's your role on group projects? </h3>
-<p class="JSanswer"> <a href ="#question3"> Research - I scour the Internet looking for ways people have already solved the problem. (It's not plagarism, I swear!) </a> </p>
-<p class="CSSanswer"> <a href ="#question3"> I'm the one who chooses the PowerPoint theme and pictures!! </a> </p>
-<p class="HTMLanswer"> <a href ="#question3"> I help to keep the group together and makes sure everybody communicates with each other. </a> </p>
+<ul>
+<li class="JSanswer" id="2a"> <a href ="#question3"> Research - I scour the Internet looking for ways people have already solved the problem. (It's not plagarism, I swear!) </a> </li>
+<li class="CSSanswer" id="2b"> <a href ="#question3"> PowerPoint theme and pictures!! </a> </li>
+<li class="HTMLanswer" id="2c"> <a href ="#question3"> Keeping the group together and making sure everybody communicates with each other </a> </li>
+</ul>
 
 <h3 id="question3"> What's your go to lunch? </h3>
-<p class="CSSanswer"> <a href ="#question4"> Avocado toast - and, yes, I do post a picture of it on Instagram. </a> </p>
-<p class="JSanswer"> <a href ="#question4"> A haphazard mix of whatever I could find in my fridge...who says carrots and peanut butter can't be eaten togther? </a> </p>
-<p class="HTMLanswer"> <a href ="#question4"> Peanut butter and jelly. I keep it classic. (If only Latin wasn't a peanut-free school...) </a> </p>
+<ul>
+<li class="CSSanswer" id="3a"> <a href ="#question4"> Avocado toast - and, yes, I do post a picture of it on Instagram. </a> </li>
+<li class="JSanswer" id="3b"> <a href ="#question4"> A haphazard mix of whatever I could find in my fridge...who says carrots and peanut butter can't be eaten togther? </a> </li>
+<li class="HTMLanswer" id="3c"> <a href ="#question4"> Peanut butter and jelly. I keep it classic. (If only Latin wasn't a peanut-free school...) </a> </li>
+</ul>
 
 <h3 id="question4"> What's your stance on emojis? </h3>
-<p class="CSSanswer"> Love love love LOVE them. The only thing that could make me identify more with this answer is if it had emojis in it. </p>
-<p class="HTMLanswer"> Ew. Plain text is enough for me, thanks. </p>
-<p class="JSanswer"> You know, they're growing on me now that Apple has those fancy antimated ones... </p>
+<ul>
+<li class="CSSanswer" id="4a"> Love love love LOVE them. The only thing that could make me identify more with this answer is if it had emojis in it. </li>
+<li class="HTMLanswer" id="4b"> Ew. Plain text is enough for me, thanks. </li>
+<li class="JSanswer" id="4c"> You know, they're growing on me now that Apple has those fancy antimated ones... </li>
+</ul>
 
 <!-- all have class "result" to make them easy to hide -->
 
-<h1 class="result"> Your result </h1>
-
-<h3 id="HTMLresult" class="result"> HTML </h3>
-<p id="HTMLresult" class="result"> You know how to stick to the basics and keep everything organized with classes and id’s. You’ve got a knack for helping very different people get along to get the job done. Honestly, we all know that you’re the (admittedly ugly) rock of the group, and the website couldn’t even exist without you. Beauty is skin deep, but text is a website’s soul.
+<h3 class="HTMLresult" class="result"> HTML </h3>
+<p class="HTMLresult" class="result"> You know how to stick to the basics and keep everything organized with classes and id’s. You’ve got a knack for helping very different people get along to get the job done. Honestly, we all know that you’re the (admittedly ugly) rock of the group, and the website couldn’t even exist without you. Beauty is skin deep, but text is a website’s soul.
  </p>
 
-<h3 id="CSSresult" class="result"> CSS </h3>
-<p id="CSSresult" class="result"> Although some people may think you’re shallow with all your focus on appearances, anybody who has clicked on a beginner’s HTML-only website knows that nobody would want to use the Internet without you. People talk about how HTML (ew) started the Internet and how Javascript (ugh) helped it take off, but nobody appreciates the forgotten middle child: CSS.
+<h3 class="CSSresult" class="result"> CSS </h3>
+<p class="CSSresult" class="result"> Although some people may think you’re shallow with all your focus on appearances, anybody who has clicked on a beginner’s HTML-only website knows that nobody would want to use the Internet without you. People talk about how HTML (ew) started the Internet and how Javascript (ugh) helped it take off, but nobody appreciates the forgotten middle child: CSS.
  </p>
 
-<h3 id="JSresult" class="result"> Javascript </h3>
-<p id="JSresult" class="result"> Some people may call you an imposter (and they’re not completely wrong). Sure, sometimes you’re scrambled, and sometimes you don’t even know what’s going on with yourself. However, despite your scrambled appearance, you bring logic and reason to the group. Using somebody else’s code to get the job done - now THAT’s smart! Take that, other languages with syntax that actually makes sense!  </p>
+<h3 class="JSresult" class="result"> Javascript </h3>
+<p class="JSresult" class="result"> Some people may call you an imposter (and they’re not completely wrong). Sure, sometimes you’re scrambled, and sometimes you don’t even know what’s going on with yourself. However, despite your scrambled appearance, you bring logic and reason to the group. Using somebody else’s code to get the job done - now THAT’s smart! Take that, other languages with syntax that actually makes sense!  </p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/index.js"> </script>

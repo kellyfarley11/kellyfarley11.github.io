@@ -42,8 +42,3 @@ a{
 .result{
 	display: none;
 }
-
-/* change appearance of whatever answer is clicked */
-.clicked{
-	color: orange;
-}

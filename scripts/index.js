@@ -1,4 +1,4 @@
-// set interval -- for timer
+//timer functionality
 
 var time = 0;
 
@@ -6,18 +6,67 @@ setInterval(function(){
 	time = time + 1;
 	$("#timer").html(time);
 }, 1000);
+// increase displayed time by 1 every 1000 milisecconds
 
-/* $("p").on("click",function(){
-  $("body").css("color", "#990000");
-});
- */
+if (time > 200){
+	prompt("Wow...you must be pretty invested in accurately determining what language you are. Do you want to reset?")
+}
+// prompt with option of yes/no?
 
+//reset functinoality
+var resetFunction(){
+	HTMLcounter = 0;
+	CSScounter = 0;
+	JScounter =0;
+	time = 0;
+}
+
+$("#reset").on("click", resetFunction())
+
+//change color when clicked
+var changeColorWhenClicked(x) {
+	$("#x").on("click", function(){
+		$("x").css("color", "orange");
+	});
+}
+
+$("#1a").on("click", changeColorWhenClicked(1a));
+
+//counter
 
 $(".HTMLanswer").on("click", function(){
   var newCurrentTotal = parseInt($("#total").html()) + 1;
   $("#total").html(newCurrentTotal);
 });
 
+var HTMLcounter = 0;
+
+var CSScounter = 0;
+
+var JScounter = 0;
+
+var questionCounter = 0;
+
+//show results
+if (questionCounter = 4){
+	if HTMLcounter > CSScounter
+		if (HTMLcounter > JScounter){
+			$(".HTMLresult").show;
+		}
+		else
+			$(".JSSresult").show;
+	if CSScounter > HTMLcounter
+		if (CSScounter > JScounter){
+			$(".CSSresult").show;
+		}
+		else
+			$(".JSresult").show;
+	if JScounter > HTMLcounter
+		if (JScounter > CSScounter):
+			$(".JSresult").show;
+		else
+			$(".CSSresult").show;
+}
 
 /* 
 $("#CSSanswer").on("click", function(){
