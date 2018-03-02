@@ -4,14 +4,19 @@ var time = 0;
 
 setInterval(function(){
 	time = time + 1;
+	// defined as global variable bc no "var"
 	$("#timer").html(time);
+	// change html to new time
 }, 1000);
 // increase displayed time by 1 every 1000 milisecconds
 
 if (time > 200){
-	prompt("Wow...you must be pretty invested in accurately determining what language you are. Do you want to reset?")
+	var askReset = prompt("Wow...you must be pretty invested in accurately determining what language you are. Do you want to reset?")
+	if (askReset = "yes"){
+		resetFunction();
+	}
 }
-// prompt with option of yes/no?
+// if person is spending a long time on the quiz, asks if want to reset
 
 //reset functinoality
 var resetFunction(){
