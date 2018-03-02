@@ -7,19 +7,17 @@ setInterval(function(){
 	// defined as global variable bc no "var"
 	$("#timer").html(time);
 	// change html to new time
-	if (time>200){
-		var askReset = prompt("Wow...you must be pretty invested in accurately determining what language you are. Do you want to reset?");
-		if (askReset="yes"){
-			time = 0;
-			// reset all the question counters
-		}
-		if (askReset="no"){
-			time=0;
-			// need to reset time as 0 no matter what so prompt doesn't keep popping up
-		}
-	}
 }, 1000);
 // increase displayed time by 1 every 1000 milisecconds
+
+setInterval(function(){
+	var askReset = prompt("Wow...you must be pretty invested in accurately determining what language you are. Do you want to reset?");
+	if (askReset="yes"){
+		time=0;
+	}
+}, 200000)
+// asks if want to reset if past 200 seconds
+// less repetitive than an if/then statement bc now prompt won't get stuck for all times greater than 200 - will only ask after 200 seconds have passed
 
 //reset functinoality
 /* var resetFunction(){
