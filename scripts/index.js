@@ -13,22 +13,29 @@ setInterval(function(){
 setInterval(function(){
 	var askReset = prompt("Wow...you must be pretty invested in accurately determining what language you are. Do you want to reset?");
 	if (askReset="yes"){
-		time=0;
+		reset();
 	}
 }, 200000)
 // asks if want to reset if past 200 seconds
 // less repetitive than an if/then statement bc now prompt won't get stuck for all times greater than 200 - will only ask after 200 seconds have passed
 
+// define counters
+var HTMLcounter = 0;
+var CSScounter = 0;
+var JScounter = 0;
+
 //reset functinoality
-/* var resetFunction(){
+function reset(){
 	HTMLcounter = 0;
 	CSScounter = 0;
 	JScounter =0;
-	time = 0;
+	time=0;
 }
 
-$("#reset").on("click", resetFunction())
+// can also reset by clicking on button
+$("#reset").on("click", reset());
 
+ /* 
 //change color when clicked
 var changeColorWhenClicked(x) {
 	$("#x").on("click", function(){
