@@ -92,9 +92,6 @@ $("#4c").on("click", function(){
 	changeColor("#4c");
 });
 
-/*
-$("#1a").on("click", changeColorWhenClicked(1a));
-
 //counter
 
 $(".HTMLanswer").on("click", function(){
@@ -111,7 +108,7 @@ var JScounter = 0;
 var questionCounter = 0;
 
 //show results
-if (questionCounter = 4){
+/* if (questionCounter = 4){
 	if HTMLcounter > CSScounter
 		if (HTMLcounter > JScounter){
 			$(".HTMLresult").show;
@@ -129,7 +126,7 @@ if (questionCounter = 4){
 			$(".JSresult").show;
 		else
 			$(".CSSresult").show;
-}
+} */
 
 /* 
 $("#CSSanswer").on("click", function(){
