@@ -1,7 +1,8 @@
-//timer functionality
+// timer functionality
 
 var time = 0;
 
+// researched tool SET INTERVAL
 setInterval(function(){
 	time = time + 1;
 	// defined as global variable bc no "var"
@@ -24,7 +25,7 @@ var HTMLcounter = 0;
 var CSScounter = 0;
 var JScounter = 0;
 
-//reset functinoality
+// reset functinoality
 function reset(){
 	HTMLcounter = 0;
 	CSScounter = 0;
@@ -32,17 +33,66 @@ function reset(){
 	time=0;
 }
 
-// can also reset by clicking on button
-$("#reset").on("click", reset());
+// can also reset by clicking on button -- NOT WORKING
+$("#reset").on("click", function(){
+	reset();
+});
 
- /* 
+
 //change color when clicked
-var changeColorWhenClicked(x) {
-	$("#x").on("click", function(){
-		$("x").css("color", "orange");
-	});
+function changeColor(x){
+	$(x).css("color", "orange");
 }
 
+$("#1a").on("click", function(){
+	changeColor("#1a");
+});
+
+$("#1b").on("click", function(){
+	changeColor("#1b");
+});
+
+$("#1c").on("click", function(){
+	changeColor("#1c");
+});
+
+$("#2a").on("click", function(){
+	changeColor("#2a");
+});
+
+$("#2b").on("click", function(){
+	changeColor("#2b");
+});
+
+$("#2c").on("click", function(){
+	changeColor("#2c");
+});
+
+$("#3a").on("click", function(){
+	changeColor("#3a");
+});
+
+$("#3b").on("click", function(){
+	changeColor("#3b");
+});
+
+$("#3c").on("click", function(){
+	changeColor("#3c");
+});
+
+$("#4a").on("click", function(){
+	changeColor("#4a");
+});
+
+$("#4b").on("click", function(){
+	changeColor("#4b");
+});
+
+$("#4c").on("click", function(){
+	changeColor("#4c");
+});
+
+/*
 $("#1a").on("click", changeColorWhenClicked(1a));
 
 //counter
