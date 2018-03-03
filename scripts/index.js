@@ -94,11 +94,6 @@ $("#4c").on("click", function(){
 
 //counter
 
-$(".HTMLanswer").on("click", function(){
-  var newCurrentTotal = parseInt($("#total").html()) + 1;
-  $("#total").html(newCurrentTotal);
-});
-
 var HTMLcounter = 0;
 
 var CSScounter = 0;
@@ -107,40 +102,39 @@ var JScounter = 0;
 
 var questionCounter = 0;
 
+$(".HTMLanswer").on("click", function(){
+	HTMLcounter = HTMLcounter + 1;
+	questionCounter = questionCounter + 1;
+})
+
+$(".CSSanswer").on("click", function(){
+	CSScounter = CSScounter + 1;
+	questionCounter = questionCounter + 1;
+})
+
+$(".JSanswer").on("click", function(){
+	JScounter = JScounter + 1;
+	questionCounter = questionCounter + 1;
+})
+
 //show results
-/* if (questionCounter = 4){
-	if HTMLcounter > CSScounter
+if (questionCounter = 4){
+	if (HTMLcounter > CSScounter){
 		if (HTMLcounter > JScounter){
 			$(".HTMLresult").show;
-		}
-		else
+		} else {
 			$(".JSSresult").show;
-	if CSScounter > HTMLcounter
+		}}
+	if (CSScounter > HTMLcounter){
 		if (CSScounter > JScounter){
 			$(".CSSresult").show;
-		}
-		else
+		} else {
 			$(".JSresult").show;
-	if JScounter > HTMLcounter
-		if (JScounter > CSScounter):
+		}}
+	if (JScounter > HTMLcounter){
+		if (JScounter > CSScounter){
 			$(".JSresult").show;
-		else
+		} else {
 			$(".CSSresult").show;
-} */
-
-/* 
-$("#CSSanswer").on("click", function(){
-	answerTotal = answerTotal + 2;
-});
-
-$("#JSanswer").on("click", function(){
-	answerTotal = answerTotal + 3;
-}); */
-
-/*
-function addToAnswerTotal(x){
-	answerTotal = answerTotal + x;
-	if answerTotal > 9 {
-		$("body").css("background-color", "#990000");
-	}
-} */
+		}}
+}
