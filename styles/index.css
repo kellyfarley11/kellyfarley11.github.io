@@ -14,16 +14,16 @@
 }
 
 body{
-	background-color: #cce6ff;
-	color: navy;
+	background-color: #e6ecff;
+	color: #0033cc;
 	font: times;
 	font-size: 30px;
 }
 
 h1{
 	font: times;
-	color: navy;
-	background-color: blue;
+	color: white;
+	background-color: #0033cc;
 	padding: 15px;
 	margin-top: 0px;
 }
@@ -34,8 +34,12 @@ h3{
 
 a{
 	text-decoration: none;
-	color: navy;
+	color: #0033cc;
 	/* get rid of automatic formatting of links */
+}
+
+li{
+	color: #0033cc;
 }
 
 /* hide results */

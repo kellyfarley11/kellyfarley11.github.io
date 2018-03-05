@@ -25,15 +25,16 @@ var HTMLcounter = 0;
 var CSScounter = 0;
 var JScounter = 0;
 
-// reset functinoality
+// reset functionality
 function reset(){
 	HTMLcounter = 0;
 	CSScounter = 0;
 	JScounter =0;
 	time=0;
+	$("li").css("color", "#0033cc");
 }
 
-// can also reset by clicking on button -- NOT WORKING
+// can also reset by clicking on button
 $("#reset").on("click", function(){
 	reset();
 });
@@ -105,36 +106,41 @@ var questionCounter = 0;
 $(".HTMLanswer").on("click", function(){
 	HTMLcounter = HTMLcounter + 1;
 	questionCounter = questionCounter + 1;
+	showResults();
 })
 
 $(".CSSanswer").on("click", function(){
 	CSScounter = CSScounter + 1;
 	questionCounter = questionCounter + 1;
+	showResults();
 })
 
 $(".JSanswer").on("click", function(){
 	JScounter = JScounter + 1;
 	questionCounter = questionCounter + 1;
+	showResults();
 })
 
 //show results
-if (questionCounter = 4){
-	if (HTMLcounter > CSScounter){
-		if (HTMLcounter > JScounter){
-			$(".HTMLresult").show;
-		} else {
-			$(".JSSresult").show;
-		}}
-	if (CSScounter > HTMLcounter){
-		if (CSScounter > JScounter){
-			$(".CSSresult").show;
-		} else {
-			$(".JSresult").show;
-		}}
-	if (JScounter > HTMLcounter){
-		if (JScounter > CSScounter){
-			$(".JSresult").show;
-		} else {
-			$(".CSSresult").show;
-		}}
+function showResults(){
+	if (questionCounter == 4){
+		if (HTMLcounter > CSScounter){
+			if (HTMLcounter > JScounter){
+				$(".HTMLresult").show();
+			} else {
+				$(".JSSresult").show();
+			}}
+		if (CSScounter > HTMLcounter){
+			if (CSScounter > JScounter){
+				$(".CSSresult").show();
+			} else {
+				$(".JSresult").show();
+			}}
+		if (JScounter > HTMLcounter){
+			if (JScounter > CSScounter){
+				$(".JSresult").show();
+			} else {
+				$(".CSSresult").show();
+			}}
+	}
 }
