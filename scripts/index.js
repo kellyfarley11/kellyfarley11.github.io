@@ -1,4 +1,4 @@
-// timer functionality
+// timer
 
 var time = 0;
 
@@ -17,24 +17,27 @@ setInterval(function(){
 		reset();
 	}
 }, 200000)
-// asks if want to reset if past 200 seconds
+// pop up that asks if want to reset if past 200 seconds
 // less repetitive than an if/then statement bc now prompt won't get stuck for all times greater than 200 - will only ask after 200 seconds have passed
 
 // define counters
 var HTMLcounter = 0;
 var CSScounter = 0;
 var JScounter = 0;
+var questionCounter = 0;
 
-// reset functionality
+// reset counters and timer
 function reset(){
 	HTMLcounter = 0;
 	CSScounter = 0;
 	JScounter =0;
+	questionCounter = 0;
 	time=0;
 	$("li").css("color", "#0033cc");
+	// reset color of bullet points
 }
 
-// can also reset by clicking on button
+// can also reset by clicking on button at bottom of page
 $("#reset").on("click", function(){
 	reset();
 });
@@ -93,15 +96,7 @@ $("#4c").on("click", function(){
 	changeColor("#4c");
 });
 
-//counter
-
-var HTMLcounter = 0;
-
-var CSScounter = 0;
-
-var JScounter = 0;
-
-var questionCounter = 0;
+//add to counter
 
 $(".HTMLanswer").on("click", function(){
 	HTMLcounter = HTMLcounter + 1;
